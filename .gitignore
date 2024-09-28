@@ -5,3 +5,6 @@ __pycache__/
 .env 
 backend/venv/
 frontend/node_modules/
+steps_commands.txt
+msb/
+
