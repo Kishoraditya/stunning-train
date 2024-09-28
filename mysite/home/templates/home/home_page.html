@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block extra_css %}
+
+{% comment %}
+Delete the line below if you're just getting started and want to remove the welcome screen!
+{% endcomment %}
+<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+
+
+<div class="hero">
+  <h1>{{ page.heading }}</h1>
+  <p>{{ page.sub_heading }}</p>
+  <a href="{{ page.button_link }}" class="btn">{{ page.button_text }}</a>
+</div>
+
+{% comment %}
+Delete the line below if you're just getting started and want to remove the welcome screen!
+{% endcomment %}
+{% include 'home/welcome_page.html' %}
+
+{% endblock content %}

@@ -1,0 +1,21 @@
+.hero {
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+  }
+  
+  .hero p {
+    font-size: 1.5em;
+  }
+  
+  .hero .btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #3399cc;
+    color: #fff;
+    text-decoration: none;
+  }
+  

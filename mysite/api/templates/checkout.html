@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Select a Plan</h1>
+<ul>
+  {% for plan in plans %}
+  <li>
+    <h2>{{ plan.name }}</h2>
+    <p>{{ plan.description }}</p>
+    <p>Price: ₹{{ plan.price }}</p>
+    <form method="post" action="{% url 'create_order' %}">
+      {% csrf_token %}
+      <input type="hidden" name="plan_id" value="{{ plan.id }}">
+      <button type="submit">Buy Now</button>
+    </form>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}
